@@ -1,0 +1,147 @@
+@charset "UTF-8";
+body{
+    font-family: "DM Sans" sans-serif;
+    background-color: azure;
+    /*background-image: url("src/imagem/azulejo.jpg");
+    background-color: rgba(0, 0, 0, 0.2);*/
+}
+
+.title{
+    text-align: center;
+    display: block;
+    align-items: center;
+    text-indent: 40px;
+    font-family: "DM Sans", sans-serif;
+    font: 30px;
+    width: 700;
+    background-color:rgb(226, 198, 180);   
+}
+.container{
+    display: block;
+    align-items: center;
+    
+}
+.title .imagem{
+    
+    width: 150px;
+    height: auto;
+margin-left: 150px;
+    
+}
+.pedreiro{
+    display: block;
+}
+.texto{
+    font-size: 1.5rem;
+}
+.gradiente-texto {
+    font-size: 30px;
+    background: linear-gradient(to right, #0e0d0c, #feb47b);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.imagem{
+    display: block;
+    height: 100px;
+    width: 100px;
+}
+    
+
+.pinduka{
+    font-family: "DM Sans", sans-serif;
+   
+    width: 700;
+    padding-left: 20px;
+    text-indent: 40px;
+    margin-left: 30px;
+    text-align: justify;
+    text-shadow: 2px 2px 2px black;
+}
+.introdducao-introducao{
+    font-family: "DM Sans", sans-serif;
+    font: 20px;
+    width: 700;
+    font-size: large ;
+    padding-left: 20px;
+}.descricao{
+    font-family: "DM Sans", sans-serif;
+   font-size: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    text-indent: 30px;
+    text-align: justify;
+    line-height: 20px;
+}
+button{
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+button:hover {
+    background-color: #0056b3;
+}
+.carrosel{
+    position: relative;
+    max-width: 600px;
+    margin: auto;
+    overflow: hidden;
+}
+.imagens-carrosel{
+    display: flex;
+    transition: transforme 0.5s ease;
+}
+.imagem img{
+    max-width: 100%;
+    display: block;
+}
+button{
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%);
+    background-color: rgba(255, 255, 255, 0.7);
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+}
+.prev{
+    left: 10px;
+}
+.next{
+    right: 10px;
+}
+/*formataçao de imagem com legenda*/
+ .foto-legenda{
+    position: relative;
+    border: 8px solid #eff5f5;
+    box-shadow: 1px 1px 3px black;
+    width: 40%;
+    height: 40%;
+    text-indent: 0px;
+    align-items: center;
+ }   
+.foto-legenda img{
+    width: 100%;
+    height: 100%;
+    text-align: justify;
+}
+.foto-legenda figcaption{
+    opacity: 0;
+    position: absolute;
+    top: 0px;
+    background-color: rgba(0, 0, 0, .4);
+    color: white;
+    width: 100%;
+    height: 100%;
+    text-indent: 20px;
+    box-sizing: border-box;
+    transition: opacity 1s;
+}
+.foto-legenda:hover figcaption{
+    opacity: 0.7;
+}
