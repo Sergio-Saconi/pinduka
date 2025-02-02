@@ -14,7 +14,9 @@ body{
     font-family: "DM Sans", sans-serif;
     font: 30px;
     width: 700;
-    background-color:rgb(226, 198, 180);   
+    background-color:rgb(226, 198, 180);  
+    position: relative;
+    top: 50px;
 }
 .container{
     display: block;
@@ -41,8 +43,8 @@ margin-left: 150px;
     -webkit-text-fill-color: transparent;
 }
 
-.imagem{
-    display: block;
+.gradiente-texto .imagem{
+    display: flex;
     height: 100px;
     width: 100px;
 }
@@ -144,4 +146,25 @@ button{
 }
 .foto-legenda:hover figcaption{
     opacity: 0.7;
+}
+/*Formataçao do menu*/
+nav#menu{
+    display: block;/*para itens flutuar*/
+}
+nav#menu ul{
+    list-style: none;/*tira marcações*/
+    text-transform: uppercase;  /*adiciona caixa alta (maiúsculas)*/
+    position: absolute; /*para posicionar o elmento em qualquer posição na tela*/
+    top: -10px;/*posição vertical*/
+    left: 300px;/*posição horizontal*/
+}
+nav#menu li {
+    display: inline-block;/*todos itens alinhados horizontalmente*/
+    background-color: #dddddd;/*ciaxas coloridas ao redor do texto*/
+    padding: 10px; /*cria espaço nas caixas*/
+    margin: 5px;/*espaço entre itens*/
+    
+}
+nav#menu h1 {
+    display: none;
 }
