@@ -1,12 +1,13 @@
 @charset "UTF-8";
-body{
+
+body {
     font-family: "DM Sans" sans-serif;
     background-color: azure;
     /*background-image: url("src/imagem/azulejo.jpg");
     background-color: rgba(0, 0, 0, 0.2);*/
 }
 
-.title{
+.title {
     text-align: center;
     display: block;
     align-items: center;
@@ -14,28 +15,33 @@ body{
     font-family: "DM Sans", sans-serif;
     font: 30px;
     width: 700;
-    background-color:rgb(226, 198, 180);  
+    background-color: rgb(224, 215, 210);
     position: relative;
     top: 50px;
 }
-.container{
+
+.container {
     display: block;
     align-items: center;
-    
+
 }
-.title .imagem{
-    
+
+.title .imagem {
+
     width: 150px;
     height: auto;
-margin-left: 150px;
-    
+    margin-left: 150px;
+
 }
-.pedreiro{
+
+.pedreiro {
     display: block;
 }
-.texto{
+
+.texto {
     font-size: 1.5rem;
 }
+
 .gradiente-texto {
     font-size: 30px;
     background: linear-gradient(to right, #0e0d0c, #feb47b);
@@ -43,16 +49,16 @@ margin-left: 150px;
     -webkit-text-fill-color: transparent;
 }
 
-.gradiente-texto .imagem{
+.gradiente-texto .imagem {
     display: flex;
     height: 100px;
     width: 100px;
 }
-    
 
-.pinduka{
+
+.pinduka {
     font-family: "DM Sans", sans-serif;
-   
+
     width: 700;
     padding-left: 20px;
     text-indent: 40px;
@@ -60,22 +66,26 @@ margin-left: 150px;
     text-align: justify;
     text-shadow: 2px 2px 2px black;
 }
-.introdducao-introducao{
+
+.introdducao-introducao {
     font-family: "DM Sans", sans-serif;
     font: 20px;
     width: 700;
-    font-size: large ;
+    font-size: large;
     padding-left: 20px;
-}.descricao{
+}
+
+.descricao {
     font-family: "DM Sans", sans-serif;
-   font-size: 20px;
+    font-size: 20px;
     margin-left: 20px;
     margin-right: 20px;
     text-indent: 30px;
     text-align: justify;
     line-height: 20px;
 }
-button{
+
+button {
     padding: 10px 20px;
     font-size: 16px;
     cursor: pointer;
@@ -85,24 +95,29 @@ button{
     border-radius: 5px;
     margin-top: 20px;
 }
+
 button:hover {
     background-color: #0056b3;
 }
-.carrosel{
+
+.carrosel {
     position: relative;
     max-width: 600px;
     margin: auto;
     overflow: hidden;
 }
-.imagens-carrosel{
+
+.imagens-carrosel {
     display: flex;
     transition: transforme 0.5s ease;
 }
-.imagem img{
+
+.imagem img {
     max-width: 100%;
     display: block;
 }
-button{
+
+button {
     position: absolute;
     top: 50%;
     transform: translate(-50%);
@@ -111,14 +126,17 @@ button{
     cursor: pointer;
     padding: 10px;
 }
-.prev{
+
+.prev {
     left: 10px;
 }
-.next{
+
+.next {
     right: 10px;
 }
+
 /*formataçao de imagem com legenda*/
- .foto-legenda{
+.foto-legenda {
     position: relative;
     border: 8px solid #eff5f5;
     box-shadow: 1px 1px 3px black;
@@ -126,13 +144,15 @@ button{
     height: 40%;
     text-indent: 0px;
     align-items: center;
- }   
-.foto-legenda img{
+}
+
+.foto-legenda img {
     width: 100%;
     height: 100%;
     text-align: justify;
 }
-.foto-legenda figcaption{
+
+.foto-legenda figcaption {
     opacity: 0;
     position: absolute;
     top: 0px;
@@ -144,27 +164,85 @@ button{
     box-sizing: border-box;
     transition: opacity 1s;
 }
-.foto-legenda:hover figcaption{
+
+.foto-legenda:hover figcaption {
     opacity: 0.7;
 }
+
 /*Formataçao do menu*/
-nav#menu{
-    display: block;/*para itens flutuar*/
+nav#menu {
+    display: block;
+    /*para itens flutuar*/
 }
-nav#menu ul{
-    list-style: none;/*tira marcações*/
-    text-transform: uppercase;  /*adiciona caixa alta (maiúsculas)*/
-    position: absolute; /*para posicionar o elmento em qualquer posição na tela*/
-    top: -10px;/*posição vertical*/
-    left: 300px;/*posição horizontal*/
+
+nav#menu ul {
+    list-style: none;
+    /*tira marcações*/
+    text-transform: uppercase;
+    /*adiciona caixa alta (maiúsculas)*/
+    position: absolute;
+    /*para posicionar o elmento em qualquer posição na tela*/
+    top: -10px;
+    /*posição vertical*/
+    left: 300px;
+    /*posição horizontal*/
 }
+
 nav#menu li {
-    display: inline-block;/*todos itens alinhados horizontalmente*/
-    background-color: #dddddd;/*ciaxas coloridas ao redor do texto*/
-    padding: 10px; /*cria espaço nas caixas*/
-    margin: 5px;/*espaço entre itens*/
-    
+    display: inline-block;
+    /*todos itens alinhados horizontalmente*/
+    background-color: #dddddd;
+    /*ciaxas coloridas ao redor do texto*/
+    padding: 10px;
+    /*cria espaço nas caixas*/
+    margin: 5px;
+    /*espaço entre itens*/
+    transition: background-color 0.8s;
+    /*controla a transição dos elementos*/
+    /*para navegadore antigos
+    -webkit-transition: bacground-color 0.8s;
+    -moz-transition:background-color 0.8s  ;
+    -o-transition:background-color 0.8s ;
+    -ms-transition:bacground-color 0.8s;*/
+
 }
+
+/*formatar elementos do menu*/
+nav#menu li:hover {
+    background-color: #606060;
+    /*muda cor do elemento ao passsar o mause*/
+}
+
 nav#menu h1 {
     display: none;
+}
+
+nav#menu a {
+    color: #000000;
+    text-decoration: none;
+}
+
+.instagram {
+    display: block;
+    display: inline-block;
+    /*todos itens alinhados horizontalmente*/
+    background-color: #dddddd;
+    /*ciaxas coloridas ao redor do texto*/
+    padding: 10px;
+    /*cria espaço nas caixas*/
+    margin: 5px;
+    /*espaço entre itens*/
+    transition: background-color 0.8s;
+    /*controla a transição dos elementos*/
+    list-style: none;
+    /*tira marcações*/
+    text-transform: uppercase;
+    /*adiciona caixa alta (maiúsculas)*/
+    color: #000000;
+    text-decoration: none;
+}
+
+.instagram:hover {
+    background-color: #606060;
+    /*muda cor do elemento ao passsar o mause*/
 }
