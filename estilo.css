@@ -1,28 +1,49 @@
 @charset "UTF-8";
+@import.roboto-<uniquifier> {
+    font-family: "Roboto", serif;
+    font-optical-sizing: auto;
+    font-weight: 100;
+    font-style: normal;
+    font-variation-settings:
+      "wdth" 100; {
+    font-family: ;
+    src: url();
+}
+}
 
 body {
     font-family: "DM Sans" sans-serif;
     background-color: azure;
+    padding-top: -30px;
     /*background-image: url("src/imagem/azulejo.jpg");
     background-color: rgba(0, 0, 0, 0.2);*/
 }
-
-.title {
+div#interface { /* O simbolo # é usado nas tags com id Ex: <div id="interface">*/
+    width: 900px;
+    margin: 10px auto 0px auto;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, .6);/*sombra no item*/
+    padding: 10px 10px 10px 10px;/*informar somente uma vez se = todos os valores*/
+    text-indent: 20px;
+}
+ .title .texto {
     text-align: center;
     display: block;
     align-items: center;
     text-indent: 40px;
     font-family: "DM Sans", sans-serif;
-    font: 30px;
+   /* font: 40px;*/
     width: 700;
     background-color: rgb(224, 215, 210);
     position: relative;
     top: 50px;
 }
-
+div#container {
+    border-bottom: 2px #60606060 solid;
+}
 .container {
     display: block;
     align-items: center;
+   
 
 }
 
@@ -31,8 +52,17 @@ body {
     width: 150px;
     height: auto;
     margin-left: 150px;
+    
 
 }
+header#cabecalho img#icone{
+    position: absolute;
+   right: 20px;
+   left: 200;
+   top: 80px;
+   text-shadow: 01px 01px 01px  black;
+}
+
 
 .pedreiro {
     display: block;
@@ -40,10 +70,11 @@ body {
 
 .texto {
     font-size: 1.5rem;
+   
 }
 
 .gradiente-texto {
-    font-size: 30px;
+    font-size: 60px;
     background: linear-gradient(to right, #0e0d0c, #feb47b);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -53,36 +84,41 @@ body {
     display: flex;
     height: 100px;
     width: 100px;
+    border-bottom: 2px #60606060 solid;
 }
 
 
 .pinduka {
     font-family: "DM Sans", sans-serif;
-
     width: 700;
     padding-left: 20px;
     text-indent: 40px;
     margin-left: 30px;
     text-align: justify;
-    text-shadow: 2px 2px 2px black;
+    text-shadow: 2px 2px 2px black;/* acrecenta sombra nos item*/
+    
 }
 
-.introdducao-introducao {
+.introducao {
     font-family: "DM Sans", sans-serif;
-    font: 20px;
+    /*font-style: italic;*/
+    font: 45px;
+    /*font-size: 50px;*/
     width: 700;
     font-size: large;
     padding-left: 20px;
+    margin-top: 50px;
+    
 }
 
 .descricao {
     font-family: "DM Sans", sans-serif;
-    font-size: 20px;
+    font-size: 40px;
     margin-left: 20px;
     margin-right: 20px;
     text-indent: 30px;
     text-align: justify;
-    line-height: 20px;
+    line-height: 1;
 }
 
 button {
@@ -140,8 +176,8 @@ button {
     position: relative;
     border: 8px solid #eff5f5;
     box-shadow: 1px 1px 3px black;
-    width: 40%;
-    height: 40%;
+    width: 50%;
+    height: 50%;
     text-indent: 0px;
     align-items: center;
 }
@@ -222,6 +258,11 @@ nav#menu a {
     text-decoration: none;
 }
 
+nav#menu a:hover {
+    color: #ffffff;
+    text-decoration: underline;
+}
+
 .instagram {
     display: block;
     display: inline-block;
@@ -238,11 +279,27 @@ nav#menu a {
     /*tira marcações*/
     text-transform: uppercase;
     /*adiciona caixa alta (maiúsculas)*/
+
+
+}
+
+.instagram a {
+    text-decoration: none;/*tira oa efeitos decorativo do texto*/
     color: #000000;
-    text-decoration: none;
 }
 
 .instagram:hover {
     background-color: #606060;
     /*muda cor do elemento ao passsar o mause*/
+}
+
+.instagram a:hover {
+    color: #ffffff;
+    text-decoration: underline;/*sublima o texto ao passar o mause*/
+}
+.conteudo {
+    font-size: 40px;
+}
+.rodape {
+    display: inline block;
 }
