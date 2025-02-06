@@ -1,15 +1,6 @@
 @charset "UTF-8";
-@import.roboto-<uniquifier> {
-    font-family: "Roboto", serif;
-    font-optical-sizing: auto;
-    font-weight: 100;
-    font-style: normal;
-    font-variation-settings:
-      "wdth" 100; {
-    font-family: ;
-    src: url();
-}
-}
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+IN:wght@100..400&display=swap');
+
 
 body {
     font-family: "DM Sans" sans-serif;
@@ -18,32 +9,39 @@ body {
     /*background-image: url("src/imagem/azulejo.jpg");
     background-color: rgba(0, 0, 0, 0.2);*/
 }
-div#interface { /* O simbolo # é usado nas tags com id Ex: <div id="interface">*/
-    width: 900px;
+
+div#interface {
+    /* O simbolo # é usado nas tags com id Ex: <div id="interface">*/
+    width: 95%;
     margin: 10px auto 0px auto;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, .6);/*sombra no item*/
-    padding: 10px 10px 10px 10px;/*informar somente uma vez se = todos os valores*/
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, .6);
+    /*sombra no item*/
+    padding: 10px 10px 10px 10px;
+    /*informar somente uma vez se = todos os valores*/
     text-indent: 20px;
 }
- .title .texto {
+
+.title .texto {
     text-align: center;
     display: block;
     align-items: center;
     text-indent: 40px;
     font-family: "DM Sans", sans-serif;
-   /* font: 40px;*/
+    /* font: 40px;*/
     width: 700;
     background-color: rgb(224, 215, 210);
     position: relative;
-    top: 50px;
+    top: 15px;
 }
+
 div#container {
     border-bottom: 2px #60606060 solid;
 }
+
 .container {
     display: block;
     align-items: center;
-   
+
 
 }
 
@@ -52,15 +50,16 @@ div#container {
     width: 150px;
     height: auto;
     margin-left: 150px;
-    
+
 
 }
-header#cabecalho img#icone{
+
+header#cabecalho img#icone {
     position: absolute;
-   right: 20px;
-   left: 200;
-   top: 80px;
-   text-shadow: 01px 01px 01px  black;
+    right: 20px;
+    left: 200;
+    top: 80px;
+    text-shadow: 01px 01px 01px black;
 }
 
 
@@ -69,17 +68,17 @@ header#cabecalho img#icone{
 }
 
 .texto {
-    font-size: 1.5rem;
-   
+    font-size: 20px;
+
 }
 
 .gradiente-texto {
-    font-size: 60px;
+   font-size: 60px;
     background: linear-gradient(to right, #0e0d0c, #feb47b);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-}
 
+}
 .gradiente-texto .imagem {
     display: flex;
     height: 100px;
@@ -95,8 +94,9 @@ header#cabecalho img#icone{
     text-indent: 40px;
     margin-left: 30px;
     text-align: justify;
-    text-shadow: 2px 2px 2px black;/* acrecenta sombra nos item*/
-    
+    text-shadow: 2px 2px 2px black;
+    /* acrecenta sombra nos item*/
+
 }
 
 .introducao {
@@ -108,12 +108,12 @@ header#cabecalho img#icone{
     font-size: large;
     padding-left: 20px;
     margin-top: 50px;
-    
+
 }
 
 .descricao {
     font-family: "DM Sans", sans-serif;
-    font-size: 40px;
+    font-size: 20px;
     margin-left: 20px;
     margin-right: 20px;
     text-indent: 30px;
@@ -283,8 +283,10 @@ nav#menu a:hover {
 
 }
 
+
 .instagram a {
-    text-decoration: none;/*tira oa efeitos decorativo do texto*/
+    text-decoration: none;
+    /*tira oa efeitos decorativo do texto*/
     color: #000000;
 }
 
@@ -295,11 +297,50 @@ nav#menu a:hover {
 
 .instagram a:hover {
     color: #ffffff;
-    text-decoration: underline;/*sublima o texto ao passar o mause*/
+    text-decoration: underline;
+    /*sublima o texto ao passar o mause*/
 }
+
 .conteudo {
-    font-size: 40px;
+    font-size: 20px;
 }
-.rodape {
-    display: inline block;
+
+
+section#body {
+    display: block;
+    width: 60%;
+    float: left;
+    /*para usar a ferramenta float os objetos tem que estar configurados em blocos = display:block;*/
+    border-right: 1px solid #606060;
+}
+
+
+aside#lateral {
+
+    display: block;
+    width: 38%;
+    float: right;
+    top: 30px;
+}
+
+.missao {
+    font-family: "DM Sans", sans-serif;
+    font-size: 20px;
+    top: 30px;
+    margin-top: 18%;
+}
+table#tabelaspec {
+    border: 1px solid #60606060;
+    border-spacing: 0px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+h1#tabela {
+    display: flex;
+}
+table#tabelaspec td {
+    border: 1px solid #606060;
+    padding: 10px;
 }
