@@ -4,7 +4,7 @@
 
 body {
     font-family: "DM Sans" sans-serif;
-    background-color: azure;
+    background-color: azure; 
     padding-top: -30px;
     /*background-image: url("src/imagem/azulejo.jpg");
     background-color: rgba(0, 0, 0, 0.2);*/
@@ -27,11 +27,11 @@ div#interface {
     align-items: center;
     text-indent: 40px;
     font-family: "DM Sans", sans-serif;
-    /* font: 40px;*/
+     font: 40px;
     width: 700;
     background-color: rgb(224, 215, 210);
     position: relative;
-    top: 15px;
+    top: 50px;
 }
 
 div#container {
@@ -73,12 +73,16 @@ header#cabecalho img#icone {
 }
 
 .gradiente-texto {
+    display: block;
    font-size: 60px;
     background: linear-gradient(to right, #0e0d0c, #feb47b);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    margin-top: -10px;
+    
 
 }
+
 .gradiente-texto .imagem {
     display: flex;
     height: 100px;
@@ -103,7 +107,7 @@ header#cabecalho img#icone {
     font-family: "DM Sans", sans-serif;
     /*font-style: italic;*/
     font: 45px;
-    /*font-size: 50px;*/
+    font-size: 50px;
     width: 700;
     font-size: large;
     padding-left: 20px;
@@ -209,6 +213,7 @@ button {
 nav#menu {
     display: block;
     /*para itens flutuar*/
+    margin-top: -20px;
 }
 
 nav#menu ul {
@@ -218,14 +223,14 @@ nav#menu ul {
     /*adiciona caixa alta (maiúsculas)*/
     position: absolute;
     /*para posicionar o elmento em qualquer posição na tela*/
-    top: -10px;
+    top: -40px;
     /*posição vertical*/
     left: 300px;
     /*posição horizontal*/
 }
 
 nav#menu li {
-    display: inline-block;
+   display: inline-block;
     /*todos itens alinhados horizontalmente*/
     background-color: #dddddd;
     /*ciaxas coloridas ao redor do texto*/
@@ -234,6 +239,7 @@ nav#menu li {
     margin: 5px;
     /*espaço entre itens*/
     transition: background-color 0.8s;
+  
     /*controla a transição dos elementos*/
     /*para navegadore antigos
     -webkit-transition: bacground-color 0.8s;
@@ -256,11 +262,13 @@ nav#menu h1 {
 nav#menu a {
     color: #000000;
     text-decoration: none;
+    
 }
 
 nav#menu a:hover {
     color: #ffffff;
     text-decoration: underline;
+    
 }
 
 .instagram {
@@ -313,8 +321,21 @@ section#body {
     /*para usar a ferramenta float os objetos tem que estar configurados em blocos = display:block;*/
     border-right: 1px solid #606060;
 }
-
-
+article#noticia-principal h2{
+    font-size: 15pt;
+    color: #000000;
+    background-color: #dddddd;
+    padding: 2% 0% 2% 2%;
+    margin: 5% 0% 5% 0%;
+}
+header#cabecalho-artigo h2{
+    font-family: "DM Sans", sans-serif;
+    font-size: 25px;
+    color: #ffffff;
+    background-color: #777373;
+    margin-bottom: 0px;
+}
+/*Formataçao da tabela*/
 aside#lateral {
 
     display: block;
@@ -340,7 +361,35 @@ table#tabelaspec {
 h1#tabela {
     display: flex;
 }
+
 table#tabelaspec td {
     border: 1px solid #606060;
     padding: 10px;
+    text-align: center;
+    /*vertical-align: middle;*/
+}
+/*Coluna da direita*/
+.ce {
+    color: #ffffff;
+    background-color: #606060;
+    vertical-align: top;
+    font-weight: bold;
+}
+/*Coluna da esquerda*/
+.cd{
+    background-color:#cecece ;
+}
+/*Formatação do caption*/
+table#tabelaspec caption{
+   color: #888888; 
+   font-size: 13pt;
+   font-weight: bolder;
+}
+caption span{
+    display: block;
+    float: right;
+    font: #000000;
+    font-size: 8pt;
+    margin-top: 2%;
+
 }
