@@ -33,6 +33,14 @@ div#interface {
     position: relative;
     top: 50px;
 }
+/*Formatar links*/
+a {
+    color: #606060;
+    text-decoration: none;
+}
+a:hover{
+    text-decoration: underline;
+}
 
 div#container {
     border-bottom: 2px #60606060 solid;
@@ -347,8 +355,8 @@ aside#lateral {
 .missao {
     font-family: "DM Sans", sans-serif;
     font-size: 20px;
-    top: 30px;
-    margin-top: 18%;
+    top: 40px;
+    margin-top: 40%;
 }
 table#tabelaspec {
     border: 1px solid #60606060;

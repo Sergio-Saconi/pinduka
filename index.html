@@ -8,11 +8,14 @@
     <link rel="stylesheet" href="estilo.css">
     <link rel="stylesheet" href="varss.css">
     <link rel="stylesheet" href="sidebar-footer.css">
+    <script src="script.js"></script>
+    <script src="funcao.js"></script>
 
 
 </head>
 
 <body>
+
     <div class="container">
 
         <div class="title">
@@ -35,10 +38,13 @@
 
             <h1>Menu Principal</h1>
             <ul>
-                <li><a href="index.html">Home</a> </li>
-                <li><a href="specs.html"> Especificações</a></li>
-                <li><a href="fotos.html">Fotos</a> </li>
-                <li> <a href="multimidia.html">Multimídia</a></li>
+                <li onmouseover="mudaFoto('src/imagem/home.png')" onmouseout="mudaFoto('src/imagem/colher2.png')"><a
+                        href="index.html">Home</a> </li>
+                <li onmouseover="mudaFoto('src/imagem/especificacoes-02.png')"
+                    onmouseout="mudaFoto('src/imagem/colher2.png')"><a href="specs.html"> Especificações</a></li>
+                <li onmouseover="mudaFoto('src/imagem/fotos.png')
+                " onmouseout="mudaFoto('src/imagem/colher2.png')"><a href="fotos.html">Fotos</a> </li>
+                <li onmouseover="mudaFoto('src/imagem/multimidia.png')"> <a href="multimidia.html">Multimídia</a></li>
                 <li><a href="fale-conosco.html">Fale conosco</a> </li>
                 <ul>
         </nav>
@@ -49,8 +55,8 @@
 
                 <div class="introducao">
                     <header id="cabecalho-artigo">
-                    <h2><em>Introdução:</em></h2>
-                </header>
+                        <h2><em>Introdução:</em></h2>
+                    </header>
                     <p class="descricao">Nascido e residente em Borborema, São Paulo, <em>Sérgio Saconi</em> é um
                         profissional
                         experiente e
@@ -123,7 +129,7 @@
                         personalizados.
                     </p>
                     <h4>Habilidades e Serviços</h4>
-                    
+
                     <p> <i>Sérgio Saconi oferece uma gama completa de serviços para sua construção ou reforma,
                             incluindo:</i>
                     </p>
@@ -192,6 +198,7 @@
             </div>
             <div class="botao">Instagram</div>
         </footer>-->
+    
     <footer class="disclaimer-premium">
         <nav id="footer">
             <h3>Contato</h3>
@@ -202,11 +209,15 @@
                         target="_blank">Instagram</a>></li>
 
                 <li> <a href="multimidia.html">Multimídia</a></li>
+                 <script>
+                    document.write("Olá! Hoje é dia " + Date());
+                    /*Parentes indica que Date é uma função e qu não vou usar nenhum poarametro dentro da função */
+                </script>
 
             </ul>
         </nav>
         <p class="disclimer-premiun__subtitle"> </p>
-
+        <div id="clock"></div>
 
 
     </footer>
@@ -221,7 +232,6 @@
 
     <script src="css/estilo.css"></script>
     </main>
-
 </body>
 
 </html>
